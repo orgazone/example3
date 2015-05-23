@@ -1,0 +1,27 @@
+<img src="img/logo-small.png">
+
+<div style="margin-top:25px;">
+    {{{getLocalizedString '%home_title' 'This is the first of three examples.'}}}
+
+    <br>{{{getLocalizedString '%publish_title' 'Publish your web apps on '}}}<a href="https://orga.zone/" target="_blank">https://orga.zone/</a>
+    <br> &nbsp;
+</div>
+
+<a href="#" id="addNewItems" data-role="button" id="saveNewData" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="a">
+	{{{getLocalizedString '%save_locally' 'Save new data locally'}}}
+    
+</a>
+
+<a href="#" id="showListItem" data-role="button" id="listData" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="a">
+    {{{getLocalizedString '%list_saved_data' 'List previously saved data'}}}
+</a>
+
+<a href="#" id="showLogsBtn" >{{{getLocalizedString '%show_list' 'Show log list'}}}</a>
+
+<!-- Sync buttons -->
+<div style="margin-top:25px;">
+    <a class="syncButtons" onclick="orgaApi.getStatus()" style="margin-left: 0px !important;" id="getSyncstatus" data-role="button" data-icon="recycle">{{{getLocalizedString '%sync' 'Sync'}}}</a>
+    <a class="syncButtons" onclick="orgaApi.getStatus(null,true);" id="pushData" data-role="button" data-icon="arrow-u">{{{getLocalizedString '%push_data' 'Push Data'}}}</a>
+    <a class="syncButtons" onclick="orgaApi.getStatus(true,null)" id="downloadData" data-role="button" data-icon="arrow-d">{{{getLocalizedString '%pull_data' 'Pull data'}}}</a>
+</div>
+<!-- /Sync buttons -->
